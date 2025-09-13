@@ -33,8 +33,8 @@ const AboutSection: React.FC = () => {
 
             {/* Right Column - Text Content */}
             <div className="space-y-6 text-center px-8 group-hover:hidden">
-              <h2 className="text-5xl font-bold text-gray-800 leading-tight">
-                YOUR ALL-IN-ONE PLACE
+              <h2 className="text-4xl font-decorative font-bold text-gray-800 leading-tight">
+                Your all-in-one place
               </h2>
 
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed text-center">
