@@ -26,8 +26,8 @@ const HomePage: React.FC = () => {
     // Use clientY directly for viewport coordinates (any part of the homepage)
     const y = event.clientY;
 
-    // Check if hovering in top 200px area of the viewport
-    setIsHoveringTop(y <= 200);
+    // Check if hovering in top 180px area of the viewport
+    setIsHoveringTop(y <= 120);
   };
 
   const handleMouseLeave = () => {
@@ -43,10 +43,12 @@ const HomePage: React.FC = () => {
     >
       {/* Fixed Navbar - always visible at top with conditional blur */}
       <div
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 w-full z-50 ${
           isScrolled
-            ? `backdrop-blur-md bg-black/20 ${
-                isHoveringTop ? "" : "-mt-[200px]"
+            ? `backdrop-blur-md ${
+                isHoveringTop
+                  ? "bg-gray-900/10 transition-all duration-50"
+                  : "bg-gray-900/10 -mt-[180px]"
               }`
             : ""
         }`}
@@ -54,10 +56,9 @@ const HomePage: React.FC = () => {
         <Navbar isScrolled={isScrolled} isHoveringTop={isHoveringTop} />
       </div>
 
-      <LandingSection />
-
       {/* Gold Logo - Between landing and about sections only */}
-      <div className="relative">
+      <div className="relative overflow-hidden">
+        <LandingSection />
         <div className="absolute bottom-[1rem] right-[-29rem] z-20 opacity-20 pointer-events-none">
           <img
             src="/src/assets/logos/woodland-branding-logo_icon-Gold.png"

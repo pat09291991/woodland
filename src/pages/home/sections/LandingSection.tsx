@@ -27,7 +27,7 @@ const LandingSection: React.FC = () => {
       </div>
 
       {/* Centered Branding */}
-      <div className="relative z-10 flex h-full items-center justify-center mt-8">
+      <div className="relative z-10 flex h-full items-center justify-center mt-32">
         <div className="text-center">
           {/* Main Logo with Company Name */}
           <div className="flex justify-center">

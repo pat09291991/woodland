@@ -1,4 +1,5 @@
 import React from "react";
+import SectionTitle from "../../../components/SectionTitle";
 
 const VillasSection: React.FC = () => {
   const villas = [
@@ -36,8 +37,8 @@ const VillasSection: React.FC = () => {
       <div className="w-full flex-1 flex flex-col">
         {/* Section Header */}
         <div className="text-center py-16 px-8">
-          <h2 className="text-6xl font-bold text-[#1a4731] mb-6">VILLAS</h2>
-          <p className="text-lg text-[#4a4a4a] max-w-4xl mx-auto leading-relaxed">
+          <SectionTitle className="mb-6">Villas</SectionTitle>
+          <p className="text-lg text-[#4a4a4a] max-w-5xl mx-auto leading-relaxed">
             Pick the perfect villa for your stay and enjoy the comfort you
             deserve. Whether you're here to relax or explore, Woodland Villa
             offers a peaceful retreat to rest, recharge, and make lasting

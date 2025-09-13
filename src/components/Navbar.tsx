@@ -11,7 +11,7 @@ const Navbar: React.FC<NavbarProps> = ({
 }) => {
   return (
     <nav className="relative z-10 group/nav">
-      <div className="w-full flex items-center justify-between px-40 py-6 group-hover/nav:backdrop-blur-md group-hover/nav:bg-black/20 transition-all duration-300">
+      <div className="w-full flex items-center justify-between px-40 py-6 group-hover/nav:backdrop-blur-md group-hover/nav:bg-gray-900/10 transition-all duration-300">
         {/* Logo */}
         <div className="flex items-center space-x-4">
           <img
