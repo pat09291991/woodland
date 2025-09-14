@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import LandingSection from "./sections/LandingSection";
 import AboutSection from "./sections/AboutSection";
+import ActivitiesSection from "./sections/ActivitiesSection";
 import VillasSection from "./sections/VillasSection";
+import PremiumServicesSection from "./sections/PremiumServicesSection";
 import Navbar from "../../components/Navbar";
 
 const HomePage: React.FC = () => {
@@ -70,6 +72,10 @@ const HomePage: React.FC = () => {
       </div>
 
       <VillasSection />
+
+      <ActivitiesSection />
+
+      <PremiumServicesSection />
     </div>
   );
 };

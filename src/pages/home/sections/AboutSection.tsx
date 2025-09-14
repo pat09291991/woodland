@@ -1,14 +1,15 @@
 import React from "react";
 import SectionTitle from "../../../components/SectionTitle";
+import SectionDescription from "../../../components/SectionDescription";
 
 const AboutSection: React.FC = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="bg-white rounded-3xl shadow-2xl p-12 max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center group min-h-[400px]">
+          <div className="flex flex-col lg:flex-row gap-12 items-center group min-h-[400px]">
             {/* Left Column - Video */}
-            <div className="relative group-hover:col-span-2 transition-all duration-1000 ease-in-out">
+            <div className="relative w-full lg:w-1/2 group-hover:w-full transition-all duration-300 ease-in-out">
               <div className="relative rounded-2xl overflow-hidden shadow-lg transition-all duration-1000 ease-in-out group-hover:h-[700px] group-hover:shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
@@ -33,10 +34,10 @@ const AboutSection: React.FC = () => {
             </div>
 
             {/* Right Column - Text Content */}
-            <div className="space-y-6 text-center px-8 group-hover:hidden">
+            <div className="space-y-6 text-center px-8 w-full lg:w-1/2 group-hover:hidden transition-all duration-1000 ease-in-out">
               <SectionTitle>Your all-in-one place</SectionTitle>
 
-              <div className="space-y-4 text-lg text-gray-700 leading-relaxed text-center">
+              <SectionDescription>
                 <p>
                   Destination for relaxation, adventure, and gatherings. Nestled
                   in the heart of{" "}
@@ -49,7 +50,7 @@ const AboutSection: React.FC = () => {
                   Villa is designed to bring people together in a serene and
                   refreshing environment.
                 </p>
-              </div>
+              </SectionDescription>
             </div>
           </div>
         </div>
