@@ -32,28 +32,32 @@ const VillasSection: React.FC = () => {
 
   return (
     <section
-      className="h-screen flex flex-col"
+      className="h-[80vh] lg:h-screen flex flex-col"
       style={{ backgroundColor: "#f7f8f8" }}
     >
       <div className="w-full flex-1 flex flex-col">
         {/* Section Header */}
-        <div className="text-center py-16 px-8">
-          <SectionTitle>Villas</SectionTitle>
-          <SectionDescription className="max-w-5xl mx-auto">
-            Pick the perfect villa for your stay and enjoy the comfort you
-            deserve. Whether you're here to relax or explore, Woodland Villa
-            offers a peaceful retreat to rest, recharge, and make lasting
-            memories.
-          </SectionDescription>
+        <div className="text-center py-8 sm:py-12 lg:py-16 px-4 sm:px-8">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-decorative font-bold text-[#0a2a25] leading-tight mb-4 sm:mb-6">
+            Villas
+          </h2>
+          <div className="space-y-4 text-sm sm:text-base lg:text-lg leading-relaxed text-[#0a2a25] max-w-5xl mx-auto">
+            <p>
+              Pick the perfect villa for your stay and enjoy the comfort you
+              deserve. Whether you're here to relax or explore, Woodland Villa
+              offers a peaceful retreat to rest, recharge, and make lasting
+              memories.
+            </p>
+          </div>
         </div>
 
         {/* Infinite Carousel - Full Width */}
-        <div className="relative overflow-hidden w-full flex-1 flex items-start pt-8">
+        <div className="relative overflow-hidden w-full flex-1 flex items-start pt-4 sm:pt-8 pb-8">
           <div className="flex animate-scroll">
             {duplicatedVillas.map((villa, index) => (
               <div
                 key={`${villa.id}-${index}`}
-                className="flex-shrink-0 w-80 mx-4 group cursor-pointer"
+                className="flex-shrink-0 w-72 sm:w-80 mx-2 sm:mx-4 group cursor-pointer"
               >
                 <div className="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 group-hover:scale-110 group-hover:shadow-2xl">
                   {/* Villa Image */}
@@ -66,12 +70,14 @@ const VillasSection: React.FC = () => {
                   </div>
 
                   {/* Villa Details */}
-                  <div className="p-6 text-center">
-                    <h3 className="text-2xl font-bold text-[#1a4731] mb-2">
+                  <div className="p-4 sm:p-6 text-center">
+                    <h3 className="text-xl sm:text-2xl font-bold text-[#1a4731] mb-2">
                       {villa.name}
                     </h3>
-                    <p className="text-lg text-[#4a4a4a] mb-4">{villa.price}</p>
-                    <button className="bg-[#a06a4a] hover:bg-[#8a5a3a] text-white px-6 py-3 rounded-full font-medium transition-colors duration-300">
+                    <p className="text-base sm:text-lg text-[#4a4a4a] mb-4">
+                      {villa.price}
+                    </p>
+                    <button className="bg-[#a06a4a] hover:bg-[#8a5a3a] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-colors duration-300">
                       View Room
                     </button>
                   </div>

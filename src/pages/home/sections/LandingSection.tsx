@@ -39,10 +39,12 @@ const LandingSection: React.FC = () => {
           </div>
 
           {/* Description */}
-          <p className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mt-[-24px]">
-            Discover Woodland Villa, a nature-centered getaway for intimate
-            moments or big celebrations. Campsite, villas, and activities—all in
-            one place.
+          <p className="max-w-3xl mx-auto text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed mt-[-24px] px-4 sm:px-6 lg:px-8">
+            Your all-in-one destination for relaxation, adventure, and
+            gatherings. Nestled in the heart of Nagcarlan, Laguna, this
+            nature-centered haven offers spacious villas, refreshing campsites,
+            and exciting activities perfect for intimate getaways and large
+            group events.
           </p>
         </div>
       </div>

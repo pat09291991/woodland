@@ -35,13 +35,17 @@ const GetInTouchSection: React.FC = () => {
   return (
     <section className="bg-white py-16 max-w-7xl mx-auto">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <SectionTitle>Get In Touch</SectionTitle>
-          <SectionDescription className="text-center max-w-4xl mx-auto">
-            Ready to book your perfect getaway? Contact us through your
-            preferred method and let us help you plan an unforgettable
-            experience.
-          </SectionDescription>
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-decorative font-bold text-[#0a2a25] leading-tight mb-4 sm:mb-6">
+            Get In Touch
+          </h2>
+          <div className="space-y-4 text-sm sm:text-base lg:text-lg leading-relaxed text-[#0a2a25] max-w-4xl mx-auto">
+            <p>
+              Ready to book your perfect getaway? Contact us through your
+              preferred method and let us help you plan an unforgettable
+              experience.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -50,7 +54,7 @@ const GetInTouchSection: React.FC = () => {
             {contactMethods.map((method, index) => (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-lg py-6 hover:shadow-md transition-shadow duration-300 px-16"
+                className="bg-white border border-gray-200 rounded-lg py-4 sm:py-6 hover:shadow-md transition-shadow duration-300 px-4 sm:px-8 lg:px-16"
               >
                 <div className="flex items-start space-x-4">
                   <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
@@ -73,7 +77,7 @@ const GetInTouchSection: React.FC = () => {
                     <h3 className="text-lg font-bold text-[#0a2a25] mb-2">
                       {method.title}
                     </h3>
-                    <div className="flex items-center justify-between space-x-2">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-2 sm:space-y-0 sm:space-x-2">
                       <p className="text-xs text-[#0a2a25] mb-4 leading-relaxed flex flex-col">
                         <span>{method.description}</span>
                         <span className="font-bold">
@@ -81,7 +85,7 @@ const GetInTouchSection: React.FC = () => {
                         </span>
                       </p>
                       <button
-                        className={`px-6 py-2 w-36 rounded-lg text-xs transition-colors duration-300 ${method.buttonStyle}`}
+                        className={`px-6 py-2 w-full sm:w-36 rounded-lg text-xs transition-colors duration-300 ${method.buttonStyle}`}
                       >
                         {method.buttonText}
                       </button>
@@ -115,7 +119,7 @@ const GetInTouchSection: React.FC = () => {
             </div>
 
             {/* Connect with Us Card */}
-            <div className="bg-white border border-gray-200 rounded-lg px-16 py-6">
+            <div className="bg-white border border-gray-200 rounded-lg px-4 sm:px-8 lg:px-16 py-4 sm:py-6">
               <div className="flex justify-between items-center">
                 <div>
                   <h3 className="text-lg font-bold text-[#0a2a25] mb-2">
@@ -125,9 +129,9 @@ const GetInTouchSection: React.FC = () => {
                     Stay updated with our latest <br /> offers and news
                   </p>
                 </div>
-                <div className="flex items-center space-x-8">
+                <div className="flex items-center space-x-4 sm:space-x-6 lg:space-x-8">
                   <div
-                    className="w-20 h-20"
+                    className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
                     style={{
                       maskImage: `url(/src/assets/Icons/letter-f_3665895.svg)`,
                       WebkitMaskImage: `url(/src/assets/Icons/letter-f_3665895.svg)`,
@@ -141,7 +145,7 @@ const GetInTouchSection: React.FC = () => {
                     }}
                   />
                   <div
-                    className="w-20 h-20"
+                    className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
                     style={{
                       maskImage: `url(/src/assets/Icons/instagram_3670274.svg)`,
                       WebkitMaskImage: `url(/src/assets/Icons/instagram_3670274.svg)`,

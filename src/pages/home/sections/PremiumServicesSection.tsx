@@ -33,18 +33,20 @@ const PremiumServicesSection: React.FC = () => {
   ];
 
   return (
-    <section className="h-[65vh] bg-white py-16 mx-auto">
-      <div className="container mx-auto px-4 h-full">
-        <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-12 h-full">
+    <section className="bg-white py-16 mx-auto">
+      <div className="container mx-auto px-4">
+        <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Column - Text Content */}
           <div>
             {/* Section Title with Crown Icon */}
-            <div className="flex items-center space-x-4 mb-8">
-              <SectionTitle className="!mb-0">Premium Services</SectionTitle>
+            <div className="flex items-center space-x-2 sm:space-x-4 mb-6 sm:mb-8">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-decorative font-bold text-[#0a2a25] leading-tight">
+                Premium Services
+              </h2>
               <img
                 src="/src/assets/icons/crown_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                 alt="Crown Icon"
-                className="h-12 w-auto"
+                className="h-8 sm:h-10 lg:h-12 w-auto"
                 style={{
                   filter:
                     "brightness(0) saturate(100%) invert(58%) sepia(100%) saturate(2000%) hue-rotate(20deg) brightness(0.9) contrast(1.3)",
@@ -53,9 +55,9 @@ const PremiumServicesSection: React.FC = () => {
             </div>
 
             {/* Description */}
-            <SectionDescription className="mb-12">
+            <div className="space-y-4 text-sm sm:text-base lg:text-lg leading-relaxed text-[#0a2a25] mb-8 sm:mb-12">
               <p>Elevate your celebration with our exclusive offerings:</p>
-            </SectionDescription>
+            </div>
 
             {/* Services List */}
             <div className="relative">
@@ -87,8 +89,8 @@ const PremiumServicesSection: React.FC = () => {
                       <h3
                         className={`font-bold ${
                           selectedService === service.id
-                            ? "text-xl text-[#1a4731]"
-                            : "text-sm text-gray-600"
+                            ? "text-base sm:text-lg lg:text-xl text-[#1a4731]"
+                            : "text-sm sm:text-base text-gray-600"
                         }`}
                       >
                         {service.title}
@@ -96,8 +98,8 @@ const PremiumServicesSection: React.FC = () => {
                       <p
                         className={`${
                           selectedService === service.id
-                            ? "text-xl text-gray-700"
-                            : "text-xs text-gray-500"
+                            ? "text-sm sm:text-base lg:text-lg text-gray-700"
+                            : "text-xs sm:text-sm text-gray-500"
                         }`}
                       >
                         {service.description}
@@ -111,7 +113,7 @@ const PremiumServicesSection: React.FC = () => {
 
           {/* Right Column - Image */}
           <div
-            className="relative h-80 lg:h-96 rounded-2xl overflow-hidden"
+            className="relative h-80 lg:h-96 rounded-2xl overflow-hidden mt-8 lg:mt-0"
             onMouseEnter={() => setIsHoveringImage(true)}
             onMouseLeave={() => setIsHoveringImage(false)}
           >
@@ -132,7 +134,7 @@ const PremiumServicesSection: React.FC = () => {
 
             {/* Call to Action Button - Inside Image */}
             <div className="absolute bottom-4 right-4">
-              <button className="bg-[#1a4731] hover:bg-[#0f2f1f] text-white px-6 py-2 rounded-full font-medium transition-colors duration-300 shadow-lg">
+              <button className="bg-[#1a4731] hover:bg-[#0f2f1f] text-white px-4 sm:px-6 py-2 rounded-full text-sm sm:text-base font-medium transition-colors duration-300 shadow-lg">
                 Inquire Now
               </button>
             </div>

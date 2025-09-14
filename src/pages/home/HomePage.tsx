@@ -24,13 +24,13 @@ const HomePage: React.FC = () => {
   }, []);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-    // Only check hover when scrolled
+    // Only check hover when scrolled and on desktop
     if (!isScrolled) return;
 
     // Use clientY directly for viewport coordinates (any part of the homepage)
     const y = event.clientY;
 
-    // Check if hovering in top 180px area of the viewport
+    // Check if hovering in top 180px area of the viewport (desktop only)
     setIsHoveringTop(y <= 120);
   };
 
@@ -52,9 +52,9 @@ const HomePage: React.FC = () => {
             ? `backdrop-blur-md ${
                 isHoveringTop
                   ? "bg-gray-900/10 transition-all duration-300"
-                  : "bg-gray-900/10 -mt-[180px]"
+                  : "bg-gray-900/10 lg:-mt-[180px]"
               }`
-            : ""
+            : "lg:bg-transparent"
         }`}
       >
         <Navbar isScrolled={isScrolled} isHoveringTop={isHoveringTop} />
@@ -63,7 +63,7 @@ const HomePage: React.FC = () => {
       {/* Gold Logo - Between landing and about sections only */}
       <div className="relative overflow-hidden">
         <LandingSection />
-        <div className="absolute bottom-[1rem] right-[-29rem] z-20 opacity-20 pointer-events-none">
+        <div className="hidden lg:block absolute bottom-[1rem] right-[-20rem] z-1 opacity-20 pointer-events-none">
           <img
             src="/src/assets/logos/woodland-branding-logo_icon-Gold.png"
             alt="Woodland Villa Gold Icon"

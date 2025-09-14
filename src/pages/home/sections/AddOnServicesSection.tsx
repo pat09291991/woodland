@@ -42,12 +42,16 @@ const AddOnServicesSection: React.FC = () => {
   return (
     <section className="bg-white py-8 mx-auto">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <SectionTitle>Add-On Services</SectionTitle>
-          <SectionDescription className="text-center max-w-xl mx-auto">
-            Customize your experience with our optional services designed to
-            make your occasion seamless and stress-free:
-          </SectionDescription>
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-decorative font-bold text-[#0a2a25] leading-tight mb-4 sm:mb-6">
+            Add-On Services
+          </h2>
+          <div className="space-y-4 text-sm sm:text-base lg:text-lg leading-relaxed text-[#0a2a25] max-w-xl mx-auto">
+            <p>
+              Customize your experience with our optional services designed to
+              make your occasion seamless and stress-free:
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
