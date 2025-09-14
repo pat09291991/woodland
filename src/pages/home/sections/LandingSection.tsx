@@ -22,7 +22,7 @@ const LandingSection: React.FC = () => {
         <img
           src="/assets/overlays/cloud-overlay.png"
           alt="Cloud overlay"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-fill"
         />
       </div>
 
