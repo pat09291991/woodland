@@ -11,7 +11,7 @@ const SectionDescription: React.FC<SectionDescriptionProps> = ({
 }) => {
   return (
     <div
-      className={`space-y-4 text-lg leading-relaxed text-[#0a2a25] ${className}`}
+      className={`space-y-4 text-sm sm:text-base lg:text-lg leading-relaxed text-[#0a2a25] ${className}`}
     >
       {children}
     </div>

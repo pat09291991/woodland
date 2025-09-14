@@ -43,14 +43,14 @@ const AddOnServicesSection: React.FC = () => {
     <section className="bg-white py-8 mx-auto">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-decorative font-bold text-[#0a2a25] leading-tight mb-4 sm:mb-6">
-            Add-On Services
-          </h2>
-          <div className="space-y-4 text-sm sm:text-base lg:text-lg leading-relaxed text-[#0a2a25] max-w-xl mx-auto">
-            <p>
-              Customize your experience with our optional services designed to
-              make your occasion seamless and stress-free:
-            </p>
+          <SectionTitle>Add-On Services</SectionTitle>
+          <div className="max-w-xl mx-auto">
+            <SectionDescription>
+              <p>
+                Customize your experience with our optional services designed to
+                make your occasion seamless and stress-free:
+              </p>
+            </SectionDescription>
           </div>
         </div>
 

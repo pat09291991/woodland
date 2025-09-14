@@ -38,16 +38,16 @@ const VillasSection: React.FC = () => {
       <div className="w-full flex-1 flex flex-col">
         {/* Section Header */}
         <div className="text-center py-8 sm:py-12 lg:py-16 px-4 sm:px-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-decorative font-bold text-[#0a2a25] leading-tight mb-4 sm:mb-6">
-            Villas
-          </h2>
-          <div className="space-y-4 text-sm sm:text-base lg:text-lg leading-relaxed text-[#0a2a25] max-w-5xl mx-auto">
-            <p>
-              Pick the perfect villa for your stay and enjoy the comfort you
-              deserve. Whether you're here to relax or explore, Woodland Villa
-              offers a peaceful retreat to rest, recharge, and make lasting
-              memories.
-            </p>
+          <SectionTitle>Villas</SectionTitle>
+          <div className="max-w-5xl mx-auto">
+            <SectionDescription>
+              <p>
+                Pick the perfect villa for your stay and enjoy the comfort you
+                deserve. Whether you're here to relax or explore, Woodland Villa
+                offers a peaceful retreat to rest, recharge, and make lasting
+                memories.
+              </p>
+            </SectionDescription>
           </div>
         </div>
 

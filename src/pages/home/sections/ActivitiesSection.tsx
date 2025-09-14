@@ -32,15 +32,15 @@ const ActivitiesSection: React.FC = () => {
       <div className="container mx-auto px-4 flex flex-col">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-decorative font-bold text-[#0a2a25] leading-tight mb-4 sm:mb-6">
-            Activities
-          </h2>
-          <div className="space-y-4 text-sm sm:text-base lg:text-lg leading-relaxed text-[#0a2a25] max-w-4xl mx-auto">
-            <p>
-              Step into the heart of nature and make every moment unforgettable.
-              Choose from a variety of thrilling activities designed for fun,
-              relaxation, and adventure.
-            </p>
+          <SectionTitle>Activities</SectionTitle>
+          <div className="max-w-4xl mx-auto">
+            <SectionDescription>
+              <p>
+                Step into the heart of nature and make every moment
+                unforgettable. Choose from a variety of thrilling activities
+                designed for fun, relaxation, and adventure.
+              </p>
+            </SectionDescription>
           </div>
         </div>
 

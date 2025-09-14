@@ -36,15 +36,15 @@ const GetInTouchSection: React.FC = () => {
     <section className="bg-white py-16 max-w-7xl mx-auto">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-decorative font-bold text-[#0a2a25] leading-tight mb-4 sm:mb-6">
-            Get In Touch
-          </h2>
-          <div className="space-y-4 text-sm sm:text-base lg:text-lg leading-relaxed text-[#0a2a25] max-w-4xl mx-auto">
-            <p>
-              Ready to book your perfect getaway? Contact us through your
-              preferred method and let us help you plan an unforgettable
-              experience.
-            </p>
+          <SectionTitle>Get In Touch</SectionTitle>
+          <div className="max-w-4xl mx-auto">
+            <SectionDescription>
+              <p>
+                Ready to book your perfect getaway? Contact us through your
+                preferred method and let us help you plan an unforgettable
+                experience.
+              </p>
+            </SectionDescription>
           </div>
         </div>
 

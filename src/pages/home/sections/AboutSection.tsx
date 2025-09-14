@@ -1,4 +1,6 @@
 import React from "react";
+import SectionTitle from "../../../components/SectionTitle";
+import SectionDescription from "../../../components/SectionDescription";
 
 const AboutSection: React.FC = () => {
   return (
@@ -33,11 +35,9 @@ const AboutSection: React.FC = () => {
 
             {/* Right Column - Text Content */}
             <div className="space-y-6 text-center px-4 sm:px-8 w-full lg:w-1/2 group-hover:hidden transition-all duration-1000 ease-in-out">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-decorative font-bold text-[#0a2a25] leading-tight">
-                Your all-in-one place
-              </h2>
+              <SectionTitle>Your all-in-one place</SectionTitle>
 
-              <div className="space-y-4 text-sm sm:text-base lg:text-lg leading-relaxed text-[#0a2a25]">
+              <SectionDescription>
                 <p>
                   Destination for relaxation, adventure, and gatherings. Nestled
                   in the heart of{" "}
@@ -50,7 +50,7 @@ const AboutSection: React.FC = () => {
                   Villa is designed to bring people together in a serene and
                   refreshing environment.
                 </p>
-              </div>
+              </SectionDescription>
             </div>
           </div>
         </div>

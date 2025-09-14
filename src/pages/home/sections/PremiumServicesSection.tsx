@@ -40,9 +40,7 @@ const PremiumServicesSection: React.FC = () => {
           <div>
             {/* Section Title with Crown Icon */}
             <div className="flex items-center space-x-2 sm:space-x-4 mb-6 sm:mb-8">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-decorative font-bold text-[#0a2a25] leading-tight">
-                Premium Services
-              </h2>
+              <SectionTitle className="!mb-0">Premium Services</SectionTitle>
               <img
                 src="/src/assets/icons/crown_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                 alt="Crown Icon"
@@ -55,8 +53,10 @@ const PremiumServicesSection: React.FC = () => {
             </div>
 
             {/* Description */}
-            <div className="space-y-4 text-sm sm:text-base lg:text-lg leading-relaxed text-[#0a2a25] mb-8 sm:mb-12">
-              <p>Elevate your celebration with our exclusive offerings:</p>
+            <div className="mb-8 sm:mb-12">
+              <SectionDescription>
+                <p>Elevate your celebration with our exclusive offerings:</p>
+              </SectionDescription>
             </div>
 
             {/* Services List */}
