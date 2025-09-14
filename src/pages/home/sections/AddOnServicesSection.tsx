@@ -42,7 +42,7 @@ const AddOnServicesSection: React.FC = () => {
   return (
     <section className="bg-white py-8 mx-auto">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-8 sm:mb-12">
+        <div className="text-center mb-8 sm:mb-12 animate-fade-in-up">
           <SectionTitle>Add-On Services</SectionTitle>
           <div className="max-w-xl mx-auto">
             <SectionDescription>
@@ -58,7 +58,11 @@ const AddOnServicesSection: React.FC = () => {
           {addOnServices.map((service, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center space-y-2 transition-colors duration-300"
+              className="flex flex-col items-center text-center space-y-2 transition-all duration-300 hover:scale-105 animate-scale-in"
+              style={{
+                animationDelay: `${index * 0.1}s`,
+                animationFillMode: "both",
+              }}
             >
               <div className="w-20 h-20 flex items-center justify-center">
                 <div

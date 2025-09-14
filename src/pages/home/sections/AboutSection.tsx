@@ -6,10 +6,10 @@ const AboutSection: React.FC = () => {
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-12 max-w-7xl mx-auto">
+        <div className="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-12 max-w-7xl mx-auto animate-fade-in-up">
           <div className="flex flex-col lg:flex-row gap-12 items-center group min-h-[400px]">
             {/* Left Column - Video */}
-            <div className="relative w-full lg:w-1/2 group-hover:w-full transition-all duration-300 ease-in-out">
+            <div className="relative w-full lg:w-1/2 group-hover:w-full transition-all duration-300 ease-in-out animate-fade-in-left">
               <div className="relative rounded-2xl overflow-hidden shadow-lg transition-all duration-1000 ease-in-out group-hover:h-[700px] group-hover:shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
@@ -18,7 +18,7 @@ const AboutSection: React.FC = () => {
                 />
                 {/* Play Button Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 group-hover:bg-black group-hover:bg-opacity-40 transition-all duration-1000 ease-in-out">
-                  <div className="w-20 h-20 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300 cursor-pointer">
+                  <div className="w-20 h-20 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300 cursor-pointer animate-bounce-in">
                     <svg
                       width="32"
                       height="32"
@@ -34,7 +34,7 @@ const AboutSection: React.FC = () => {
             </div>
 
             {/* Right Column - Text Content */}
-            <div className="space-y-6 text-center px-4 sm:px-8 w-full lg:w-1/2 group-hover:hidden transition-all duration-1000 ease-in-out">
+            <div className="space-y-6 text-center px-4 sm:px-8 w-full lg:w-1/2 group-hover:hidden transition-all duration-1000 ease-in-out animate-fade-in-right">
               <SectionTitle>Your all-in-one place</SectionTitle>
 
               <SectionDescription>

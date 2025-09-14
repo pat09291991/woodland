@@ -37,17 +37,19 @@ const PremiumServicesSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Column - Text Content */}
-          <div>
+          <div className="animate-fade-in-left">
             {/* Section Title with Crown Icon */}
             <div className="flex items-center space-x-2 sm:space-x-4 mb-6 sm:mb-8">
               <SectionTitle className="!mb-0">Premium Services</SectionTitle>
               <img
                 src="/assets/Icons/crown_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                 alt="Crown Icon"
-                className="h-8 sm:h-10 lg:h-12 w-auto"
+                className="h-8 sm:h-10 lg:h-12 w-auto animate-bounce-in"
                 style={{
                   filter:
                     "brightness(0) saturate(100%) invert(58%) sepia(100%) saturate(2000%) hue-rotate(20deg) brightness(0.9) contrast(1.3)",
+                  animationDelay: "0.5s",
+                  animationFillMode: "both",
                 }}
               />
             </div>
@@ -113,7 +115,7 @@ const PremiumServicesSection: React.FC = () => {
 
           {/* Right Column - Image */}
           <div
-            className="relative h-80 lg:h-96 rounded-2xl overflow-hidden mt-8 lg:mt-0"
+            className="relative h-80 lg:h-96 rounded-2xl overflow-hidden mt-8 lg:mt-0 animate-fade-in-right"
             onMouseEnter={() => setIsHoveringImage(true)}
             onMouseLeave={() => setIsHoveringImage(false)}
           >

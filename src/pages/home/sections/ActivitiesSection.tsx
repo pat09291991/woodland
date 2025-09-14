@@ -31,7 +31,7 @@ const ActivitiesSection: React.FC = () => {
     <section className="bg-white py-16">
       <div className="container mx-auto px-4 flex flex-col">
         {/* Section Header */}
-        <div className="text-center mb-8 sm:mb-12">
+        <div className="text-center mb-8 sm:mb-12 animate-fade-in-up">
           <SectionTitle>Activities</SectionTitle>
           <div className="max-w-4xl mx-auto">
             <SectionDescription>
@@ -47,10 +47,14 @@ const ActivitiesSection: React.FC = () => {
         {/* Activities Grid */}
         <div className="flex-1 flex items-center justify-center mb-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
-            {activities.map((activity) => (
+            {activities.map((activity, index) => (
               <div
                 key={activity.id}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl group cursor-pointer"
+                className="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl group cursor-pointer animate-scale-in"
+                style={{
+                  animationDelay: `${index * 0.2}s`,
+                  animationFillMode: "both",
+                }}
               >
                 {/* Activity Image */}
                 <div className="relative h-64 overflow-hidden">

@@ -34,12 +34,22 @@ const LandingSection: React.FC = () => {
             <img
               src="/assets/logos/woodland-branding-logo_green_text.png"
               alt="Woodland Villa Logo"
-              className="h-[45vh] w-auto object-contain"
+              className="h-[45vh] w-auto object-contain animate-fade-in-up"
+              style={{
+                animationDelay: "0.5s",
+                animationFillMode: "both",
+              }}
             />
           </div>
 
           {/* Description */}
-          <p className="max-w-3xl mx-auto text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed mt-[-24px] px-4 sm:px-6 lg:px-8">
+          <p
+            className="max-w-3xl mx-auto text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed mt-[-24px] px-4 sm:px-6 lg:px-8 animate-fade-in-up"
+            style={{
+              animationDelay: "1s",
+              animationFillMode: "both",
+            }}
+          >
             Your all-in-one destination for relaxation, adventure, and
             gatherings. Nestled in the heart of Nagcarlan, Laguna, this
             nature-centered haven offers spacious villas, refreshing campsites,

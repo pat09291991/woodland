@@ -37,7 +37,7 @@ const VillasSection: React.FC = () => {
     >
       <div className="w-full flex-1 flex flex-col">
         {/* Section Header */}
-        <div className="text-center py-8 sm:py-12 lg:py-16 px-4 sm:px-8">
+        <div className="text-center py-8 sm:py-12 lg:py-16 px-4 sm:px-8 animate-fade-in-up">
           <SectionTitle>Villas</SectionTitle>
           <div className="max-w-5xl mx-auto">
             <SectionDescription>
@@ -57,9 +57,13 @@ const VillasSection: React.FC = () => {
             {duplicatedVillas.map((villa, index) => (
               <div
                 key={`${villa.id}-${index}`}
-                className="flex-shrink-0 w-72 sm:w-80 mx-2 sm:mx-4 group cursor-pointer"
+                className="flex-shrink-0 w-72 sm:w-80 mx-2 sm:mx-4 group cursor-pointer animate-fade-in-up"
+                style={{
+                  animationDelay: `${(index % 3) * 0.3}s`,
+                  animationFillMode: "both",
+                }}
               >
-                <div className="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 group-hover:scale-110 group-hover:shadow-2xl">
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl">
                   {/* Villa Image */}
                   <div className="h-64 overflow-hidden">
                     <img

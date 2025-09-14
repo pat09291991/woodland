@@ -35,7 +35,7 @@ const GetInTouchSection: React.FC = () => {
   return (
     <section className="bg-white py-16 max-w-7xl mx-auto">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
           <SectionTitle>Get In Touch</SectionTitle>
           <div className="max-w-4xl mx-auto">
             <SectionDescription>
@@ -54,7 +54,11 @@ const GetInTouchSection: React.FC = () => {
             {contactMethods.map((method, index) => (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-lg py-4 sm:py-6 hover:shadow-md transition-shadow duration-300 px-4 sm:px-8 lg:px-16"
+                className="bg-white border border-gray-200 rounded-lg py-4 sm:py-6 hover:shadow-md transition-all duration-300 px-4 sm:px-8 lg:px-16 animate-fade-in-left hover:scale-105"
+                style={{
+                  animationDelay: `${index * 0.2}s`,
+                  animationFillMode: "both",
+                }}
               >
                 <div className="flex items-start space-x-4">
                   <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
@@ -97,9 +101,15 @@ const GetInTouchSection: React.FC = () => {
           </div>
 
           {/* Right Column - Location and Social */}
-          <div className="space-y-6">
+          <div className="space-y-6 animate-fade-in-right">
             {/* Location Card */}
-            <div className="bg-[#0a2a25] rounded-lg pt-8 px-2 pb-2 text-center text-white">
+            <div
+              className="bg-[#0a2a25] rounded-lg pt-8 px-2 pb-2 text-center text-white animate-scale-in"
+              style={{
+                animationDelay: "0.3s",
+                animationFillMode: "both",
+              }}
+            >
               <h3 className="text-lg font-bold mb-2">Location</h3>
               <p className="text-sm leading-relaxed">
                 Brgy. Taytay, Nagcarlan Laguna
@@ -119,7 +129,13 @@ const GetInTouchSection: React.FC = () => {
             </div>
 
             {/* Connect with Us Card */}
-            <div className="bg-white border border-gray-200 rounded-lg px-4 sm:px-8 lg:px-16 py-4 sm:py-6">
+            <div
+              className="bg-white border border-gray-200 rounded-lg px-4 sm:px-8 lg:px-16 py-4 sm:py-6 animate-scale-in hover:scale-105 transition-all duration-300"
+              style={{
+                animationDelay: "0.6s",
+                animationFillMode: "both",
+              }}
+            >
               <div className="flex justify-between items-center">
                 <div>
                   <h3 className="text-lg font-bold text-[#0a2a25] mb-2">
