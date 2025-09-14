@@ -57,15 +57,15 @@ const VillasSection: React.FC = () => {
             {duplicatedVillas.map((villa, index) => (
               <div
                 key={`${villa.id}-${index}`}
-                className="flex-shrink-0 w-72 sm:w-80 mx-2 sm:mx-4 group cursor-pointer animate-fade-in-up"
+                className="flex-shrink-0 w-80 sm:w-96 lg:w-[28rem] mx-3 sm:mx-4 group cursor-pointer animate-fade-in-up"
                 style={{
                   animationDelay: `${(index % 3) * 0.3}s`,
                   animationFillMode: "both",
                 }}
               >
-                <div className="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl">
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl">
                   {/* Villa Image */}
-                  <div className="h-64 overflow-hidden">
+                  <div className="h-64 sm:h-72 lg:h-80 overflow-hidden">
                     <img
                       src={villa.image}
                       alt={villa.name}
@@ -74,14 +74,14 @@ const VillasSection: React.FC = () => {
                   </div>
 
                   {/* Villa Details */}
-                  <div className="p-4 sm:p-6 text-center">
-                    <h3 className="text-xl sm:text-2xl font-bold text-[#1a4731] mb-2">
+                  <div className="p-4 sm:p-6 lg:p-8 text-center">
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#1a4731] mb-2 sm:mb-3">
                       {villa.name}
                     </h3>
-                    <p className="text-base sm:text-lg text-[#4a4a4a] mb-4">
+                    <p className="text-base sm:text-lg lg:text-xl text-[#4a4a4a] mb-4 sm:mb-6">
                       {villa.price}
                     </p>
-                    <button className="bg-[#a06a4a] hover:bg-[#8a5a3a] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-colors duration-300">
+                    <button className="bg-[#a06a4a] hover:bg-[#8a5a3a] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base lg:text-lg font-medium transition-colors duration-300">
                       View Room
                     </button>
                   </div>
