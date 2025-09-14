@@ -32,7 +32,7 @@ const VillasSection: React.FC = () => {
 
   return (
     <section
-      className="h-[80vh] md:h-[70vh] lg:h-screen flex flex-col"
+      className="h-screen md:h-[70vh] lg:h-screen flex flex-col"
       style={{ backgroundColor: "#f7f8f8" }}
     >
       <div className="w-full flex-1 flex flex-col">
