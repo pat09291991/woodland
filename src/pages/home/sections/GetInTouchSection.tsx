@@ -133,7 +133,7 @@ const GetInTouchSection: React.FC = () => {
                   <div
                     className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
                     style={{
-msTextAutospace                      maskImage: `url(/assets/Icons/letter-f_3665895.svg)`,
+                      maskImage: `url(/assets/Icons/letter-f_3665895.svg)`,
                       WebkitMaskImage: `url(/assets/Icons/letter-f_3665895.svg)`,
                       maskSize: "contain",
                       WebkitMaskSize: "contain",
