@@ -42,7 +42,7 @@ const PremiumServicesSection: React.FC = () => {
             <div className="flex items-center space-x-2 sm:space-x-4 mb-6 sm:mb-8">
               <SectionTitle className="!mb-0">Premium Services</SectionTitle>
               <img
-                src="/src/assets/icons/crown_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                src="/assets/icons/crown_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                 alt="Crown Icon"
                 className="h-8 sm:h-10 lg:h-12 w-auto"
                 style={{

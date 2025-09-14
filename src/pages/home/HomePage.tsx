@@ -65,7 +65,7 @@ const HomePage: React.FC = () => {
         <LandingSection />
         <div className="hidden lg:block absolute bottom-[1rem] right-[-20rem] z-1 opacity-20 pointer-events-none">
           <img
-            src="/src/assets/logos/woodland-branding-logo_icon-Gold.png"
+            src="/assets/logos/woodland-branding-logo_icon-Gold.png"
             alt="Woodland Villa Gold Icon"
             className="h-[60rem] w-auto object-contain"
           />

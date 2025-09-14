@@ -5,33 +5,33 @@ import SectionDescription from "../../../components/SectionDescription";
 const AddOnServicesSection: React.FC = () => {
   const addOnServices = [
     {
-      icon: "/src/assets/Icons/instant_mix_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
+      icon: "/assets/Icons/instant_mix_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
       title: "Sound & Light Setup",
       description:
         "Professional audio and lighting to create the perfect mood.",
       iconColor: "#95633B",
     },
     {
-      icon: "/src/assets/Icons/airport_shuttle_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
+      icon: "/assets/Icons/airport_shuttle_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
       title: "Transportation",
       description: "Hassle-free travel arrangements for you and your guests.",
       iconColor: "#B98C60",
     },
     {
-      icon: "/src/assets/Icons/fork_spoon_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
+      icon: "/assets/Icons/fork_spoon_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
       title: "Catering",
       description:
         "Delectable menus tailored to your preferences and dietary needs.",
       iconColor: "#95633B",
     },
     {
-      icon: "/src/assets/Icons/camera_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
+      icon: "/assets/Icons/camera_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
       title: "Photography & Videography",
       description: "Capture every memory with a skilled creative team.",
       iconColor: "#B98C60",
     },
     {
-      icon: "/src/assets/Icons/event_note_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
+      icon: "/assets/Icons/event_note_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
       title: "Event Planning",
       description:
         "From concept to execution, our planners handle the details so you can enjoy your special day.",

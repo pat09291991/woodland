@@ -5,7 +5,7 @@ import SectionDescription from "../../../components/SectionDescription";
 const GetInTouchSection: React.FC = () => {
   const contactMethods = [
     {
-      icon: "/src/assets/Icons/chat_bubble_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg",
+      icon: "/assets/Icons/chat_bubble_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg",
       title: "Facebook Messenger",
       description: "Instant booking & inquiries.",
       secondDescription: "Fastest response time",
@@ -13,7 +13,7 @@ const GetInTouchSection: React.FC = () => {
       buttonStyle: "bg-[#B98C60] text-white hover:bg-[#7a4f2f]",
     },
     {
-      icon: "/src/assets/Icons/phone_in_talk_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg",
+      icon: "/assets/Icons/phone_in_talk_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg",
       title: "Phone Call",
       description: "Direct line to our team",
       secondDescription: "+63 917 123 4567",
@@ -22,7 +22,7 @@ const GetInTouchSection: React.FC = () => {
         "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50",
     },
     {
-      icon: "/src/assets/Icons/mail_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg",
+      icon: "/assets/Icons/mail_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg",
       title: "Email",
       description: "Send us detailed inquiries",
       secondDescription: "info@woodlandvillaph.com",
@@ -133,8 +133,8 @@ const GetInTouchSection: React.FC = () => {
                   <div
                     className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
                     style={{
-                      maskImage: `url(/src/assets/Icons/letter-f_3665895.svg)`,
-                      WebkitMaskImage: `url(/src/assets/Icons/letter-f_3665895.svg)`,
+msTextAutospace                      maskImage: `url(/assets/Icons/letter-f_3665895.svg)`,
+                      WebkitMaskImage: `url(/assets/Icons/letter-f_3665895.svg)`,
                       maskSize: "contain",
                       WebkitMaskSize: "contain",
                       maskRepeat: "no-repeat",
@@ -147,8 +147,8 @@ const GetInTouchSection: React.FC = () => {
                   <div
                     className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
                     style={{
-                      maskImage: `url(/src/assets/Icons/instagram_3670274.svg)`,
-                      WebkitMaskImage: `url(/src/assets/Icons/instagram_3670274.svg)`,
+                      maskImage: `url(/assets/Icons/instagram_3670274.svg)`,
+                      WebkitMaskImage: `url(/assets/Icons/instagram_3670274.svg)`,
                       maskSize: "contain",
                       WebkitMaskSize: "contain",
                       maskRepeat: "no-repeat",

@@ -12,7 +12,7 @@ const LandingSection: React.FC = () => {
           playsInline
           className="h-full w-full object-cover"
         >
-          <source src="/src/assets/videos/forest_trees.mp4" type="video/mp4" />
+          <source src="/assets/videos/forest_trees.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -20,7 +20,7 @@ const LandingSection: React.FC = () => {
       {/* Cloud Overlay Image */}
       <div className="absolute inset-0 z-5">
         <img
-          src="/src/assets/overlays/cloud-overlay.png"
+          src="/assets/overlays/cloud-overlay.png"
           alt="Cloud overlay"
           className="h-full w-full object-cover"
         />
@@ -32,7 +32,7 @@ const LandingSection: React.FC = () => {
           {/* Main Logo with Company Name */}
           <div className="flex justify-center">
             <img
-              src="/src/assets/logos/woodland-branding-logo_green_text.png"
+              src="/assets/logos/woodland-branding-logo_green_text.png"
               alt="Woodland Villa Logo"
               className="h-[45vh] w-auto object-contain"
             />

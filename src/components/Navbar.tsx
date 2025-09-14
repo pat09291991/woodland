@@ -23,8 +23,8 @@ const Navbar: React.FC<NavbarProps> = ({
           <img
             src={
               isScrolled && isHoveringTop
-                ? "/src/assets/logos/woodland-branding-logo_icon-Gold.png"
-                : "/src/assets/logos/white_woodland-branding-logo_Icon_green.png"
+                ? "/assets/logos/woodland-branding-logo_icon-Gold.png"
+                : "/assets/logos/white_woodland-branding-logo_Icon_green.png"
             }
             alt="Woodland Villa Logo"
             className="h-12 sm:h-16 lg:h-20 w-auto object-contain transition-all duration-300"
