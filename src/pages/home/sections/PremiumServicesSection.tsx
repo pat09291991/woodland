@@ -33,14 +33,14 @@ const PremiumServicesSection: React.FC = () => {
   ];
 
   return (
-    <section className="h-[65vh] bg-white py-16 max-w-7xl mx-auto">
+    <section className="h-[65vh] bg-white py-16 mx-auto">
       <div className="container mx-auto px-4 h-full">
         <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-12 h-full">
           {/* Left Column - Text Content */}
           <div>
             {/* Section Title with Crown Icon */}
             <div className="flex items-center space-x-4 mb-8">
-              <SectionTitle className="mb-0">Premium Services</SectionTitle>
+              <SectionTitle className="!mb-0">Premium Services</SectionTitle>
               <img
                 src="/src/assets/icons/crown_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
                 alt="Crown Icon"

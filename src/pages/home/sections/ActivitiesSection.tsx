@@ -42,7 +42,7 @@ const ActivitiesSection: React.FC = () => {
 
         {/* Activities Grid */}
         <div className="flex-1 flex items-center justify-center mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
             {activities.map((activity) => (
               <div
                 key={activity.id}

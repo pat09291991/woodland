@@ -4,6 +4,8 @@ import AboutSection from "./sections/AboutSection";
 import ActivitiesSection from "./sections/ActivitiesSection";
 import VillasSection from "./sections/VillasSection";
 import PremiumServicesSection from "./sections/PremiumServicesSection";
+import AddOnServicesSection from "./sections/AddOnServicesSection";
+import GetInTouchSection from "./sections/GetInTouchSection";
 import Navbar from "../../components/Navbar";
 
 const HomePage: React.FC = () => {
@@ -49,7 +51,7 @@ const HomePage: React.FC = () => {
           isScrolled
             ? `backdrop-blur-md ${
                 isHoveringTop
-                  ? "bg-gray-900/10 transition-all duration-50"
+                  ? "bg-gray-900/10 transition-all duration-300"
                   : "bg-gray-900/10 -mt-[180px]"
               }`
             : ""
@@ -76,6 +78,10 @@ const HomePage: React.FC = () => {
       <ActivitiesSection />
 
       <PremiumServicesSection />
+
+      <AddOnServicesSection />
+
+      <GetInTouchSection />
     </div>
   );
 };
