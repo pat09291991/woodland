@@ -28,8 +28,8 @@ const ActivitiesSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white py-16">
-      <div className="container mx-auto px-4 flex flex-col">
+    <section className="bg-white py-12 sm:py-16">
+      <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12 animate-fade-in-up">
           <SectionTitle>Activities</SectionTitle>
@@ -45,8 +45,8 @@ const ActivitiesSection: React.FC = () => {
         </div>
 
         {/* Activities Grid */}
-        <div className="flex-1 flex items-center justify-center mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+        <div className="w-full mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full max-w-6xl mx-auto">
             {activities.map((activity, index) => (
               <div
                 key={activity.id}
@@ -57,24 +57,24 @@ const ActivitiesSection: React.FC = () => {
                 }}
               >
                 {/* Activity Image */}
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                   <img
                     src={activity.image}
                     alt={activity.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   {/* Price Overlay */}
-                  <div className="absolute top-4 right-4 bg-green-400 text-white px-3 py-1 rounded-full font-bold text-sm">
+                  <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-green-400 text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full font-bold text-xs sm:text-sm">
                     {activity.price}
                   </div>
                 </div>
 
                 {/* Activity Footer */}
-                <div className="bg-[#1a4731] px-6 py-4 flex items-center justify-between">
-                  <h3 className="text-white text-xl font-bold">
+                <div className="bg-[#1a4731] px-4 py-3 sm:px-6 sm:py-4 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-0">
+                  <h3 className="text-white text-lg sm:text-xl font-bold text-center sm:text-left">
                     {activity.name}
                   </h3>
-                  <button className="bg-[#1a4731] hover:bg-[#0f2f1f] text-white px-4 py-2 rounded-full font-medium transition-colors duration-300 border border-white/20 hover:border-white/40">
+                  <button className="bg-[#1a4731] hover:bg-[#0f2f1f] text-white px-3 py-2 sm:px-4 sm:py-2 rounded-full font-medium transition-colors duration-300 border border-white/20 hover:border-white/40 text-sm sm:text-base">
                     Book Activity
                   </button>
                 </div>
